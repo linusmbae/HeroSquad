@@ -30,6 +30,13 @@ public void heroIsCreatedCorrectly_true() throws Exception
         assertEquals("Flying",hero.getmSpecialPowers());
     }
 
+    @Test
+    public void heroInstantiatesWithHeroesWeakness() throws  Exception
+    {
+        Hero hero=createNewHero();
+        assertEquals("stones",hero.getmWeakness());
+    }
+
     public Hero createNewHero()
     {
         return new Hero("Super Girl",35,"Flying", "stones",1);
