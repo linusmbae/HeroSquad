@@ -33,6 +33,44 @@ public class Hero {
         return Objects.hash(mName, mAge, mSpecialPowers, mWeakness, mId);
     }
 
+    public String getmName() {
+        return mName;
+    }
 
+    public void setmName(String mName) {
+        this.mName = mName;
+    }
+
+    public int getmAge() {
+        return mAge;
+    }
+
+    public void setmAge(int mAge) {
+        this.mAge = mAge;
+    }
+
+    public String getmSpecialPowers() {
+        return mSpecialPowers;
+    }
+
+    public void setmSpecialPowers(String mSpecialPowers) {
+        this.mSpecialPowers = mSpecialPowers;
+    }
+
+    public String getmWeakness() {
+        return mWeakness;
+    }
+
+    public void setmWeakness(String mWeakness) {
+        this.mWeakness = mWeakness;
+    }
+
+    public int getmId() {
+        return mId;
+    }
+
+    public void setmId(int mId) {
+        this.mId = mId;
+    }
 
 }
