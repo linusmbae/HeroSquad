@@ -23,7 +23,12 @@ public void heroIsCreatedCorrectly_true() throws Exception
         Hero hero = createNewHero();
         assertEquals(35,hero.getmAge());
     }
-
+    @Test
+    public void heroInstantiatesWithSuperPowers() throws Exception
+    {
+        Hero hero = createNewHero();
+        assertEquals("Flying",hero.getmSpecialPowers());
+    }
 
     public Hero createNewHero()
     {
