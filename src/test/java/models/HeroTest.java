@@ -17,6 +17,12 @@ public void heroIsCreatedCorrectly_true() throws Exception
         Hero hero=createNewHero();
         assertEquals("Super Girl",hero.getmName());
     }
+    @Test
+    public void heroInstantiatesWithAge()throws Exception
+    {
+        Hero hero = createNewHero();
+        assertEquals(35,hero.getmAge());
+    }
 
 
     public Hero createNewHero()
