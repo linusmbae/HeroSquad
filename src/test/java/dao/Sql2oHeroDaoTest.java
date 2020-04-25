@@ -22,4 +22,16 @@ public class Sql2oHeroDaoTest {
     conn.close();
 }
 
+    @Test
+    public void addingHeroSetsId() throws Exception {
+        Hero hero =createNewHero();
+        int originalHeroId = hero.getmId();
+        heroDao.add(hero);
+        assertEquals(originalHeroId,hero.getmId());
+    }
+
+    public Hero createNewHero()
+{
+    return new Hero("Super Girl",35,"Flying", "stones",1);
+}
 }
